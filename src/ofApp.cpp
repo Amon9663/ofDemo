@@ -2,7 +2,7 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-
+std:: cout << "  Hello from setup";
 }
 
 //--------------------------------------------------------------
@@ -12,15 +12,18 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-ofBackground(0);
+ofBackground(3);
 ofTranslate(ofGetWidth()/2, ofGetHeight()/2);
 
-for(int i = 0; i < 3; i++)
- {
-   ofRotate(20);
-   ofDrawLine(0,0,0,220);
+for (int i = 0; i < 40; i++)
+{
 
- }
+ofRotate(50);
+ofDrawLine(25, 0, 42, 72);
+ofDrawLine(40, 0, 42, 72);
+ofDrawLine(80, 0, 42, 72);
+
+}
 }
 
 
